@@ -15,7 +15,12 @@ def check_eligibility(percentage):
     else:
         return "Shortage"
  
-
+def calculate_absent_days(total_days, attended_days):
+ 
+    absent_days = total_days - attended_days
+ 
+    return absent_days
+ 
  
 # Main program
  
@@ -25,11 +30,14 @@ total = 100
 percentage = calculate_attendance(attended, total)
  
 status = check_eligibility(percentage)
+
+absent_days = calculate_absent_days(total,attended)
  
 print("Employee Attendance Management")
  
 print("Total Working Days:", total)
 print("Days Attended:", attended)
 print("Attendance Percentage:", percentage)
+print('Absent Days:',absent_days)
  
 print("Attendance Status:", status)
