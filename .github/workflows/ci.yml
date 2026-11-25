@@ -79,7 +79,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: sandeepratnam343/cicd-demo-attendance:v1
+          tags: simhasworld/demo_emp_cicd-web:v1
    # Job 4: Deploy application to Render
   deploy:
     runs-on: ubuntu-latest
