@@ -80,7 +80,7 @@ jobs:
           context: .
           push: true
           tags: |
-            simhasworld/demo_emp_cicd-web:v2
+            simhasworld/demo_emp_cicd-web:v3
             simhasworld/demo_emp_cicd-web:latest
    # Job 4: Deploy application to Render
   deploy:
